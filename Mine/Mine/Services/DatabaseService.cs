@@ -38,7 +38,7 @@ namespace Mine.Services
         }
 
         /// <summary>
-        /// 
+        /// adds item to the database table
         /// </summary>
         /// <param name="item"></param>
         /// <returns></returns>
