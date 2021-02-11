@@ -1,5 +1,4 @@
-﻿using Mine.Models;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using Mine.Helpers;
 
 namespace UnitTests.Helpers
@@ -19,6 +18,21 @@ namespace UnitTests.Helpers
 
             // Assert 
             Assert.AreEqual(0, result);
+        }
+
+        [Test]
+        public void RollDice_Valid_Roll_1_Dice_6_Should_Return_Between_1_And_6()
+        {
+            // Arrange
+
+            // Act
+            var result = DiceHelper.RollDice(1, 6);
+
+            // Reset
+
+            // Assert 
+            Assert.AreEqual(true, result >= 1);
+            Assert.AreEqual(true, result <= 6);
         }
     }
 }
